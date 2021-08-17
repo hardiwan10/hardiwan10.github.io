@@ -17,11 +17,10 @@
   }
   
   #elemen {
-      text-shadow: 1px 1px 1px #ccc;
-      font-size: 1.5em;
+      text-shadow: 2px 2px 2px #ccc;
+      font-size: 1.5rem;
   }
 
   #daftar {
-    text-shadow: 1px 1px 1px #ccc;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }

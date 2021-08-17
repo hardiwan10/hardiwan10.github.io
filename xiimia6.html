@@ -18,8 +18,29 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="shortcut icon" href="img/hardiwan.ico">
-    
+        
     <title>Daftar Hadir XII MIA 6</title>
+
+    <script type="text/javascript">
+      window.onload = function() { jam(); }
+     
+      function jam() {
+       var e = document.getElementById('jam'),
+       d = new Date(), h, m, s;
+       h = d.getHours();
+       m = set(d.getMinutes());
+       s = set(d.getSeconds());
+     
+       e.innerHTML = h +':'+ m +':'+ s;
+     
+       setTimeout('jam()', 1000);
+      }
+     
+      function set(e) {
+       e = e < 10 ? '0'+ e : e;
+       return e;
+      }
+     </script>
   </head>
   <body id="home">
     <!-- Navbar -->
@@ -150,15 +171,16 @@
    <!-- Akhir Contact -->
       </div>
       <div class="card-footer text-muted">
-        
+        <center>
+          <h1 style="font-size: 25px; font-family: verdana;" id="jam"></h1>
+        </center>
       </div>
     </div>    
   </div>
     <!--Akhir Card -->
-
-  <hr>
-   
     
+  <hr>
+       
     <!-- Footer -->
     <footer class="bg-primary text-white text-center pt-4 pb-3">
       <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/hardiwan10/" class="text-white fw-bold">Hardiwan</a></p>  

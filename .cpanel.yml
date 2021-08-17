@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/hardiwan/daftarhadir/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp dhxmia1.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH

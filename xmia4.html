@@ -47,15 +47,15 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Hardiwan</a>
+        <a class="navbar-brand" href="index.html"><i id="elemen" class="bi bi-house-fill"></i></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html"><i id="elemen" class="bi bi-house-fill"></i></a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
@@ -63,12 +63,20 @@
               <a class="nav-link" href="#gallery">Gallery</a>
             </li> -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i id="daftar" class="bi bi-pencil-square"></i>  Daftar Hadir</a>
+              <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i id="daftar" class="bi bi-pencil-square"></i></a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item text-center" href="xmia1.html">X MIA 1</a></li>
                 <li><a class="dropdown-item text-center" href="xmia2.html">X MIA 2</a></li>
                 <li><a class="dropdown-item text-center" href="xmia3.html">X MIA 3</a></li>
-                <li><a class="dropdown-item p-2 mb-1 bg-secondary text-white text-center" href="xmia4.html"><i class="bi bi-chevron-double-right"></i>   X MIA 4</a></li>
+                <li><a class="dropdown-item p-2 mb-1 text-center" href="xmia4.html">
+                  <button type="button" class="btn btn-primary position-relative">
+                    X MIA 4
+                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                      <span class="visually-hidden">New alerts</span>
+                    </span>
+                  </button>
+                  <!-- <span class="badge bg-primary">XII MIA 4</span> -->
+                </a></li>
                 <li><a class="dropdown-item text-center" href="xmia5.html">X MIA 5</a></li>                
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item text-center" href="xiimia4.html">XII MIA 4</a></li>
@@ -102,52 +110,56 @@
                  </div>
                <form name="contact-form">                  
                    <div class="mb-3 text-start">
-                     <label for="Name" class="form-label"><b>Nama Lengkap</b></label><strong><label style="color:rgb(245, 10, 10)">[*]</label></strong>
-                     <select class="form-select" aria-label="Default select example" name="nama" autofocus required>
+                     <label for="Name" class="form-label"><b>Nama Lengkap</b></label><strong><label style="color:rgb(245, 10, 10)">*</label></strong>
+                     <select class="form-select" aria-label="Default select example" name="nama" autofocus required autocomplete="off">
                        <option selected></option>
-                       <option value="ABNAN APRIADI">1. ABNAN APRIADI</option>
-                       <option value="ADITYA PUTRA PRATAMA">2. ADITYA PUTRA PRATAMA</option>
-                       <option value="ALYA ALFANNY FIRELA">3. ALYA ALFANNY FIRELA</option>
-                       <option value="ANDI MUHAMMAD RIKI">4. ANDI MUHAMMAD RIKI</option>
-                       <option value="ATHIF GHAZY ALI">5. ATHIF GHAZY ALI</option>
-                       <option value="AYU PURNAMA SARI">6. AYU PURNAMA SARI</option>
-                       <option value="DIANDRA AIRA SALSABILA">7. DIANDRA AIRA SALSABILA</option>
-                       <option value="FAJRUL FADHILAH AHQAF">8. FAJRUL FADHILAH AHQAF</option>
-                       <option value="FATHIAN AKBAR">9. FATHIAN AKBAR</option>
-                       <option value="FAUZAN REZKY AL FAHREZA">10. FAUZAN REZKY AL FAHREZA</option>
-                       <option value="INDAH RAHMA YUNI">11. INDAH RAHMA YUNI</option>
-                       <option value="MUH AGUNG">12. MUH AGUNG</option>
-                       <option value="MUH HENDRA RIFALDI">13. MUH HENDRA RIFALDI</option>
-                       <option value="MUH. ARRIFQI ALFALAH ALI">14. MUH. ARRIFQI ALFALAH ALI</option>
-                       <option value="MUH. FARAJ SIRAJA">15. MUH. FARAJ SIRAJA</option>
-                       <option value="MUH. REZKY ARDIANSYAH">16. MUH. REZKY ARDIANSYAH</option>
-                       <option value="MUH. ZAYYAAN ARSYAD">17. MUH. ZAYYAAN ARSYAD</option>
-                       <option value="NADIYAH ZAKIYYAH IDRIS SADIK">18. NADIYAH ZAKIYYAH IDRIS SADIK</option>
-                       <option value="NISWATUNSYAKIRAH">19. NISWATUNSYAKIRAH</option>
-                       <option value="NUR ALIYAH RAMADANI DAHLAN">20. NUR ALIYAH RAMADANI DAHLAN</option>
-                       <option value="NUR ALIYYAH AZ ZAHRA">21. NUR ALIYYAH AZ ZAHRA</option>
-                       <option value="NUR FADHILAH NAIMA">22. NUR FADHILAH NAIMA</option>
-                       <option value="NUR FADHILLAH ARSY">23. NUR FADHILLAH ARSY</option>
-                       <option value="RATU ZAHRA AMELIA">24. RATU ZAHRA AMELIA</option>
-                       <option value="SAFA AL ZENA IBNU NATZA">25. SAFA AL ZENA IBNU NATZA</option>
-                       <option value="SHEARLY ASSYIFA CHARLESH">26. SHEARLY ASSYIFA CHARLESH</option>
-                       <option value="SUCI OKTAVIANI">27. SUCI OKTAVIANI</option>
-                       <option value="ZAHRA DWI ZAHIRA">28. ZAHRA DWI ZAHIRA</option>
-                       <option value="ZAKY KAYANA ANWAR">29. ZAKY KAYANA ANWAR</option>
-                       <option value="ZHIZIE IZZATY HERMAWAN">30. ZHIZIE IZZATY HERMAWAN</option>                        
+                       <option value="A. MIFTAHUL AULA">1. A. MIFTAHUL AULA</option>
+                       <option value="AGUNG MELAR">2. AGUNG MELAR</option>
+                       <option value="AMELIA PUTRI">3. AMELIA PUTRI</option>
+                       <option value="FADIAH ADLINA B">4. FADIAH ADLINA B</option>
+                       <option value="FERDI">5. FERDI</option>
+                       <option value="HAEDIR SHALEH">6. HAEDIR SHALEH</option>
+                       <option value="HUSNA AMELIA">7. HUSNA AMELIA</option>
+                       <option value="IKBAL">8. IKBAL</option>
+                       <option value="KARTIA">9. KARTIA</option>
+                       <option value="KHAERA NUR SAKINA">10. KHAERA NUR SAKINA</option>
+                       <option value="MADINATUL MUNAWWARA">11. MADINATUL MUNAWWARA</option>
+                       <option value="MEGAWATI">12. MEGAWATI</option>
+                       <option value="MUH ALIF HIDAYAT">13. MUH ALIF HIDAYAT</option>
+                       <option value="MUH ASKUR">14. MUH ASKUR</option>
+                       <option value="MUH. YUSNANDAR">15. MUH. YUSNANDAR</option>
+                       <option value="MUH.AKBAR">16. MUH.AKBAR</option>
+                       <option value="MUH. DANY ISYRAQ">17. MUH. DANY ISYRAQ</option>
+                       <option value="MUHAMMAD RAFII HIDAYAT">18. MUHAMMAD RAFII HIDAYAT</option>
+                       <option value="MUHAMMAD TAUFIKURRAHMAN">19. MUHAMMAD TAUFIKURRAHMAN</option>
+                       <option value="NARDA">20. NARDA</option>
+                       <option value="NORMAWAHYUNI">21. NORMAWAHYUNI</option>
+                       <option value="NUR ALISA">22. NUR ALISA</option>
+                       <option value="NURIATUL RAHMAH">23. NURIATUL RAHMAH</option>
+                       <option value="PUTRI RAMADANI">24. PUTRI RAMADANI</option>
+                       <option value="RAHMANIA">25. RAHMANIA</option>
+                       <option value="RIKA SAFITRI">26. RIKA SAFITRI</option>
+                       <option value="RISMI">27. RISMI</option>
+                       <option value="RUKMANA">28. RUKMANA</option>
+                       <option value="S.ABDUL KADR">29. S.ABDUL KADR</option>
+                       <option value="SITTI RABIATUL ADAWIAH">30. SITTI RABIATUL ADAWIAH</option>
+                       <option value="SYARIFAH ISMAENI">31. SYARIFAH ISMAENI</option>
+                       <option value="SYARIFAH NUR FADLIAH">32. SYARIFAH NUR FADLIAH</option>
+                       <option value="WINDI">33. WINDI</option>
+                       <option value="YASRIL ANANTA SYUKUR">34. YASRIL ANANTA SYUKUR</option>
                      </select>
                      <!-- <input type="text" class="form-control" id="name" aria-describedby="name" name="nama"> -->
                    </div>
                    <div class="mb-3">
                      <div class="form-floating mb-3">
-                       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" required>
-                       <label for="floatingInput"><b>Email</b><strong><label style="color:rgb(245, 10, 10)"> [*]</label></strong></label>
+                       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" required autocomplete="off">
+                       <label for="floatingInput"><b>Email</b><strong><label style="color:rgb(245, 10, 10)"> *</label></strong></label>
                      </div>
                      <!-- <label for="email" class="form-label">Email</label>
                      <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="example@email.com" name="email"> -->
                    </div>
                    <div class="mb-1 text-start">                        
-                       <label for="pesan" class="form-label"><b>Kehadiran</b></label><strong><label style="color:rgb(245, 10, 10)"> [*]</label></strong>
+                       <label for="pesan" class="form-label"><b>Kehadiran</b></label><strong><label style="color:rgb(245, 10, 10)"> *</label></strong>
                        <select class="form-select" aria-label="Default select example" name="pesan" required>
                          <option selected></option>
                          <option value="Hadir">Hadir</option>
@@ -157,7 +169,7 @@
                        <!-- <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea> -->
                    </div>
                    <div class="mb-3 text-start">
-                   <strong><label style="color:rgb(245, 10, 10)">[*]</label></strong><label style="color:rgb(0, 0, 0)">Wajib Diisi!</label>
+                   <strong><label style="color:rgb(245, 10, 10)">*</label></strong><label style="color:rgb(0, 0, 0)">Wajib Diisi!</label>
                    </div>
                    <button type="submit" class="btn btn-danger btn-kirim">Kirim</button>
                    <button class="btn btn-success btn-loading d-none" type="button" disabled>
@@ -197,7 +209,7 @@
   </script>
     
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxjmP8KLZJmOeyGOtpl8D23ufJXNJnhga-FFiIQQPjVXguGtvrEsoHrMs-K3nAtBOzF/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbys-Rl5lRtQcxOVOGaaFUyGh6-yzaigvuKEev4w7uOnpyA93VB61c65cOJQ_rSkuTK56A/exec'
         const form = document.forms['contact-form']
         const btnKirim = document.querySelector('.btn-kirim')
         const btnLoading = document.querySelector('.btn-loading')
